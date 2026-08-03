@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Chat Demo</title>
+
+    <script>
+      window.daktelaAiChatConfig = {
+          url: "https://mstano-demo.bot.coworkers.ai",
+          daktelaAiChatId: "26519a6f-60b5-4307-80a3-dae8b841d623",
+      };
+
+      (function(){
+          var e=window.daktelaAiChatConfig;
+          if(!window.daktelaAiChat||!window.daktelaAiChat.__isProxy){
+              var t=[];
+              window.daktelaAiChat=new Proxy({queue:t,__isProxy:true},{
+                  get:function(e,n){
+                      return n in e ? e[n] : function(){
+                          t.push({
+                              m:n,
+                              a:[].slice.call(arguments),
+                              t:Date.now()
+                          });
+                      };
+                  }
+              });
+          }
+
+          var s=document.createElement("script");
+          s.defer=true;
+          s.crossOrigin="anonymous";
+          s.src=e.url.replace(/\/+$/,"")+"/chat-window-public-api/loader/dai-loader.js";
+          document.head.appendChild(s);
+      })();
+    </script>
+
+</head>
+
+<body>
+
+<h1>Daktela AI Chat Demo</h1>
+<p>The chatbot should appear in the bottom-right corner.</p>
+
+</body>
+</html>
