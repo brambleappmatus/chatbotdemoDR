@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1920" height="1080" viewBox="0 0 1920 1080">
+  <defs>
+    <linearGradient id="bg" x1="0" x2="1" y1="0" y2="1">
+      <stop offset="0" stop-color="#eef4f9"/>
+      <stop offset="1" stop-color="#dbe8f3"/>
+    </linearGradient>
+  </defs>
+  <rect width="1920" height="1080" fill="url(#bg)"/>
+  <rect x="120" y="110" width="1680" height="860" rx="24" fill="#ffffff" stroke="#c9d7e4" stroke-width="3"/>
+  <rect x="120" y="110" width="1680" height="84" rx="24" fill="#0b3f73"/>
+  <circle cx="174" cy="152" r="12" fill="#ff5953"/>
+  <circle cx="214" cy="152" r="12" fill="#f5c542"/>
+  <circle cx="254" cy="152" r="12" fill="#66c46c"/>
+  <text x="960" y="490" text-anchor="middle" font-family="Arial, sans-serif" font-size="62" font-weight="700" fill="#0b3f73">COMPANY WEBSITE SCREENSHOT</text>
+  <text x="960" y="570" text-anchor="middle" font-family="Arial, sans-serif" font-size="34" fill="#547089">Replace screenshot-placeholder.svg in index.html</text>
+  <text x="960" y="625" text-anchor="middle" font-family="Arial, sans-serif" font-size="28" fill="#6e8498">Recommended size: 1920 × 1080 or larger</text>
+</svg>
